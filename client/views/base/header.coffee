@@ -9,5 +9,9 @@
 #   	console.log "style"
 #   	# Crater.overlay "profilepop",
 
-Template.header.events "click .show-my-modal-button": ->
-  Session.set "show-my-modal", true
+Template.header.events "click .show-alphabetical-modal-button": ->
+  Session.set "alphabetical-modal", true
+
+Template.header.events "click .show-style-modal-button": ->
+  Session.set "style-modal", true
+

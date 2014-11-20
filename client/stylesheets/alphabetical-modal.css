@@ -1,0 +1,45 @@
+/*Modal General Style*/
+.big-modal {
+	top:33px;
+	min-height:600px;
+	background-color:#f0f1f3;
+	padding:20px;
+}
+
+.big-modal ul {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.modal-dialog {
+	opacity:0.96;
+}
+
+
+
+
+
+
+
+
+/*Alphabetical Modal Style*/
+.alph-filter-button-unit {
+	list-style-type:none;
+	display:inline;
+  font-size:14px;
+  color:#5b5b5b;
+}
+
+.alph-filter-button-unit:hover {
+	color:#bdb2a5;
+}
+
+.index-letter {
+	margin-left:10px;
+}
+
+
+.number-filter {
+	margin-right:5px;
+}
+
