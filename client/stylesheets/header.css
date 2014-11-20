@@ -1,0 +1,21 @@
+.container {
+    width:960px;
+}
+.header-link-container {
+	padding-left:35%;
+}
+
+.header-links {
+	color: #5B5B5B;
+	font-size:15px;
+	font-weight:600;
+}
+
+.header-links:hover {
+	color:#bdb2a5;
+}
+
+.header-wrapper{
+	background-color:#e2e2e2;
+}
+
