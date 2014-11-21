@@ -60,28 +60,6 @@ filter: alpha(opacity=50);
 	position:relative;
 }
 
-@media screen and (max-width:960px) {
-	.carousel-inner div{
-		width:960px!important;
-		height:600px!important;
-		overflow:hidden;
-	}
-
-	.carousel-caption {
-		width:500px;
-	}
-
-	.carousel-caption-text {
-	font-size:80px;
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	top:28%;
-	}
-}
-
 .carousel-indicators {
 	position:fixed;
 	left:0;
@@ -116,5 +94,23 @@ filter: alpha(opacity=50);
 .carousel-inner > .item >img {
 	height:100%;
 	width:100%;
+}
+
+.slide-image {
+  height:100vh;
+}
+
+.slide1 .slide-image{
+	background: url("/images/furniture-bg-1.jpg") no-repeat center fixed;
+	background-size:cover;
+}
+
+@media screen and (max-width:960px) {
+	.carousel-inner .slide-image {
+		width:auto;
+		background-position: center center;
+  	background-repeat: no-repeat;
+		
+	}
 }
 
