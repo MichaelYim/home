@@ -15,6 +15,9 @@
 	opacity:0.96;
 }
 
+.modal {
+	top:52px;
+}
 
 
 
@@ -32,6 +35,8 @@
 
 .alph-filter-button-unit:hover {
 	color:#bdb2a5;
+	cursor: hand; 
+	cursor: pointer
 }
 
 .index-letter {
