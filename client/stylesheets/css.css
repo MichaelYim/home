@@ -2,3 +2,15 @@ body {
 	font-family: 'Oxygen', sans-serif;
 	background:white;
 }
+
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.Centered
+{
+    display: inline-block;
+    vertical-align: middle;
+}

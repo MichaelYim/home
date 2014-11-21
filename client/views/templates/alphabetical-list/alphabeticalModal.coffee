@@ -6,7 +6,7 @@ Template.alphabeticalModal.helpers
         Session.get "alphabetical-modal"
 
 Template.alphabeticalModal.events
-  "click .close, click .cancel": ->
+  "click .close": ->
     Session.set "alphabetical-modal", false
 
   "submit form": (event) ->

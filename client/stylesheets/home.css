@@ -46,17 +46,40 @@ filter: alpha(opacity=50);
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
-  min-width: 1920px;
+  /*min-width: 1920px;*/
+
 }
 
 .carousel {
-	min-width:1920px;
-	min-height:1080px;
+	height:auto;
+	width:auto;
 	background:white;
 	position:absolute;
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
+}
+
+@media screen and (max-width:960px) {
+	.carousel-inner div{
+		width:960px!important;
+		height:600px!important;
+		overflow:hidden;
+	}
+
+	.carousel-caption {
+		width:500px;
+	}
+
+	.carousel-caption-text {
+	font-size:80px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top:28%;
+	}
 }
 
 .carousel-indicators {
@@ -95,17 +118,3 @@ filter: alpha(opacity=50);
 	width:100%;
 }
 
-.safe-box {
-	width:960px;
-	height:600px;
-	background:blue;
-	position:absolute;
-	left:0;
-	right:0;
-	margin-left:auto;
-	margin-right:auto;
-	/*top:53px;*/
-/*	margin-left:auto;
-	margin-right:auto;*/
-
-}
