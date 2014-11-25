@@ -1,22 +1,30 @@
 /*Modal General Style*/
 .big-modal {
-	top:33px;
+	top:-17px;
 	min-height:600px;
-	background-color:#f0f1f3;
+	background-color:rgba(240, 241, 243, 0.96);
 	padding:20px;
+	border-radius:10px;
 }
 
 .big-modal ul {
 	padding-left:20px;
 	padding-right:20px;
+	margin-bottom:50px;
 }
 
 .modal-dialog {
-	opacity:0.96;
+	/*opacity:0.96;*/
 }
 
 .modal {
 	top:52px;
+	overflow-y:scroll;
+	margin-bottom:59px;
+}
+
+.modal-body {
+	overflow-y:scroll;
 }
 
 
@@ -29,7 +37,7 @@
 .alph-filter-button-unit {
 	list-style-type:none;
 	display:inline;
-  font-size:14px;
+  font-size:18px;
   color:#5b5b5b;
 }
 
@@ -40,7 +48,9 @@
 }
 
 .index-letter {
-	margin-left:10px;
+	margin-left:15px;
+  font-size:30px;
+  color:#5b5b5b;
 }
 
 
@@ -48,3 +58,21 @@
 	margin-right:5px;
 }
 
+.list-brand-unit {
+	margin-bottom:40px;
+}
+
+.list-brand-unit-inner {
+	overflow:auto;
+}
+
+.brand-name {
+	font-size:30px;
+	color:#5b5b5b;
+	text-align:center;
+}
+
+.brand-name:hover {
+	color:#bdb2a5;
+	cursor: pointer; cursor: hand;
+}
