@@ -10,8 +10,8 @@ iron:router
 coffeescript
 accounts-password
 mrt:crater-modals
-mizzao:bootstrap-3
 accounts-ui
 natestrauser:font-awesome
 mizzao:bootboxjs
+mizzao:bootstrap-3
 

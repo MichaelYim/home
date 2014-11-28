@@ -1,12 +1,33 @@
 Template.alphabeticalModal.created = ->
   Session.set "alphabetical-modal", false
-  Session.set "filter-letter", "A"
+  Session.set "filter-letter", "All"
 
 Template.alphabeticalModal.helpers 
     showModal: ->
       Session.get "alphabetical-modal"
-    filteredBrands: ->
-    	Brands.find({letter: Session.get("filter-letter")})
+
+    showAll: ->
+      all = Session.get "filter-letter"
+      all == "All"
+
+
+  # Not-filtered
+    filteredBrandsAll: ->
+      Brands.find()
+
+# One set of filters
+    filteredBrands360: ->
+    	Brands.find({letter: Session.get("filter-letter"), linkType: "360"})
+
+    filteredBrandsLookBook: ->
+      Brands.find({letter: Session.get("filter-letter"), linkType: "lookBook"})
+
+    filteredBrandsSite: ->
+      Brands.find({letter: Session.get("filter-letter"), linkType: "site"})
+
+    filteredBrandsSite: ->
+      Brands.find({letter: Session.get("filter-letter"), linkType: "text"})
+
 
     currentLetter: ->
     	Session.get "filter-letter"

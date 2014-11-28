@@ -39,64 +39,64 @@
            		</div>
         		<!-- store listing starts here -->
         		<div class="">
-        		  <div class="row index-letter">
-        		  	{{currentLetter}}					
-        		  </div>
-        		  {{#each filteredBrands}}
-							<div class="col-sm-3 list-brand-unit">
-								<div class="list-brand-unit-inner">
-									<div class="row listing-image">
-		        		    <img src="http://placehold.it/200x100">
-	  							</div>
-	  							<div class="row listing-logo">
-	  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
-	  	      		  </div>
-									<h3 class="row brand-name">{{englishName}}</h3>
-								</div>
-							</div>
-        		  {{/each}}
-							<!-- <div class="row index-letter">A
-							</div>
-							<div class="col-sm-3">
-								<div class="row listing-image">
-									
-								</div>
-								<div class="row listing-logo">
-								</div>
-								<div class="row listing-name">
-									SHOP A
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="row listing-image">
-									
-								</div>
-								<div class="row listing-logo">
-								</div>
-								<div class="row listing-name">
-									SHOP A
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="row listing-image">
-									
-								</div>
-								<div class="row listing-logo">
-								</div>
-								<div class="row listing-name">
-									SHOP A
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="row listing-image">
-									
-								</div>
-								<div class="row listing-logo">
-								</div>
-								<div class="row listing-name">
-									SHOP A
-								</div> -->
-							<!-- < /div> -->
+        			{{#if showAll}}
+        				{{#each filteredBrandsAll}}
+									<div class="col-sm-3 list-brand-unit">
+											<div class="list-brand-unit-inner">
+												<div class="row listing-image">
+					        		    <img src="http://placehold.it/200x100">
+				  							</div>
+				  							<div class="row listing-logo">
+				  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+				  	      		  </div>
+												<h3 class="row brand-name">{{englishName}}</h3>
+											</div>
+										</div>
+        				{{/each}}
+        				{{else}}
+	        		  <div class="row index-letter">
+	        		  	{{currentLetter}}					
+	        		  </div>
+		        		  {{#each filteredBrands360}}
+										<div class="col-sm-3 list-brand-unit">
+											<div class="list-brand-unit-inner">
+												<div class="row listing-image">
+					        		    <img src="http://placehold.it/200x100">
+				  							</div>
+				  							<div class="row listing-logo">
+				  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+				  	      		  </div>
+												<h3 class="row brand-name">{{englishName}}</h3>
+											</div>
+										</div>
+		        		  {{/each}}
+		         		  {{#each filteredBrandsLookBook}}
+										<div class="col-sm-3 list-brand-unit">
+											<div class="list-brand-unit-inner">
+												<div class="row listing-image">
+					        		    <img src="http://placehold.it/200x100">
+				  							</div>
+				  							<div class="row listing-logo">
+				  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+				  	      		  </div>
+												<h3 class="row brand-name">{{englishName}}</h3>
+											</div>
+										</div>
+		        		  {{/each}}
+		         		  {{#each filteredBrandsSite}}
+										<div class="col-sm-3 list-brand-unit">
+											<div class="list-brand-unit-inner">
+												<div class="row listing-image">
+					        		    <img src="http://placehold.it/200x100">
+				  							</div>
+				  							<div class="row listing-logo">
+				  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+				  	      		  </div>
+												<h3 class="row brand-name">{{englishName}}</h3>
+											</div>
+										</div>
+		        		  {{/each}}
+		        		{{/if}}
         		</div>
 			
           </div>

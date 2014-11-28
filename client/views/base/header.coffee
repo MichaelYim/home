@@ -8,7 +8,15 @@ Template.header.events
 		Session.set "style-modal", false
 		Session.set "alphabetical-modal", true
 
+Template.header.events
+	"click .360-link": ->
+		Session.set "style-modal", false
+		Session.set "alphabetical-modal", false
+
 # Things that need to happen whenever a header link is clicked
 Template.header.events
 	"click .header-links": ->
-		Session.set "filter-letter", "A"
+		Session.set "filter-letter", "All"
+		Session.set "filter-style", "American Classics"
+		console.log Session.get "filter-style"
+
