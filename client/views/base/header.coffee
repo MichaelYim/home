@@ -17,6 +17,4 @@ Template.header.events
 Template.header.events
 	"click .header-links": ->
 		Session.set "filter-letter", "All"
-		Session.set "filter-style", "American Classics"
-		console.log Session.get "filter-style"
-
+		Session.set "filter-style", "All"

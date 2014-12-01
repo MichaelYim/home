@@ -4,7 +4,7 @@
       <div class="modal show">
           <div class="modal-dialog container">
           	<!-- Modal starts here-->
-            <div class="big-modal modal-content animated fadeInLeft">
+            <div class="big-modal modal-body animated fadeInLeft">
             	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             	<div class="row style-filter-buttons">
   					     <ul class="style-filter-button-ul">
@@ -20,14 +20,96 @@
 									<li class="style-filter-button-unit col-sm-4" value="Modern European">Modern European</li>
 									<li class="style-filter-button-unit col-sm-4" value="Office">Office</li>
 									<li class="style-filter-button-unit col-sm-4" value="Outdoor">Outdoor</li>
+									<li class="style-filter-button-unit col-sm-4" value="All">All</li>
                 </ul>
            		</div>
         		<!-- store listing starts here -->
 						<div class="">
-        		  <div class="row index-letter">
-        		  	{{currentStyle}}					
+							{{#if showAll}}
+      					{{#each filteredBrandsAll}}
+									<div class="col-sm-3 list-brand-unit">
+										<div class="list-brand-unit-inner">
+											<!-- <div class="row listing-image">
+				        		    <img src="http://placehold.it/200x100">
+			  							</div> -->
+		  	      		  		{{#if is360}}
+		  	      		  		<div class="row listing-logo">
+		  	      		    		<a href="http://ihomec.com/2fp1commune/flash/TourViewer_commune.html"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+													<img class="logo-overlay-icon" src="/images/360eye-icon.png"></a>
+												</div>
+		  	      		  		{{/if}}
+		  	      		  		{{#if isLookBook}}
+		  	      		  		<div class="row listing-logo">
+		  	      		    		<a href="http://ihomec.com/lookbook/johnrichard/"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+								   		    <img class="logo-overlay-icon" src="/images/lookbook-icon.png"></a>
+
+								   		  </div>
+												{{/if}}
+												{{#if isSite}}
+												<div class="row listing-logo">
+		  	      		    		<a href=""><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+			  	      		    	<img class="logo-overlay-icon" src="/images/site-icon.png"></a>
+												</div>
+												{{/if}}	
+												{{#if isInfo}}
+												<div class="row listing-logo">
+		  	      		    		<a href=""><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+			  	      		    	<img class="logo-overlay-icon" src="/images/info-icon.png"></a>
+			 									</div>
+												{{/if}}
+											<h3 class="row brand-name">{{englishName}}</h3>
+										</div>
+									</div>
+      					{{/each}}
+      				{{else}}
+							<div class="row index-style">
+	        		  {{currentStyle}}					
         		  </div>
-        		  {{#each filteredBrands}}
+	        		  {{#each filteredBrands360}}
+									<div class="col-sm-3 list-brand-unit">
+										<div class="list-brand-unit-inner">
+											<!-- <div class="row listing-image">
+				        		    <img src="http://placehold.it/200x100">
+			  							</div> -->
+			  							<div class="row listing-logo">
+			  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+			  	      		    <img class="logo-overlay-icon" src="/images/360eye-icon.png">
+			  	      		  </div>
+											<h3 class="row brand-name">{{englishName}}</h3>
+										</div>
+									</div>
+	        		  {{/each}}
+	         		  {{#each filteredBrandsLookBook}}
+									<div class="col-sm-3 list-brand-unit">
+										<div class="list-brand-unit-inner">
+											<!-- <div class="row listing-image">
+				        		    <img src="http://placehold.it/200x100">
+			  							</div> -->
+			  							<div class="row listing-logo">
+			  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+			  	      		    <img class="logo-overlay-icon" src="/images/lookbook-icon.png">
+			  	      		  </div>
+											<h3 class="row brand-name">{{englishName}}</h3>
+										</div>
+									</div>
+	        		  {{/each}}
+	         		  {{#each filteredBrandsSite}}
+									<div class="col-sm-3 list-brand-unit">
+										<div class="list-brand-unit-inner">
+											<!-- <div class="row listing-image">
+				        		    <img src="http://placehold.it/200x100">
+			  							</div> -->
+			  							<div class="row listing-logo">
+			  	      		    <img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+			  	      		    <img class="logo-overlay-icon" src="/images/site-icon.png">
+			  	      		  </div>
+											<h3 class="row brand-name">{{englishName}}</h3>
+										</div>
+									</div>
+	        		  {{/each}}
+	        		 {{/if}}
+
+<!--         		  {{#each filteredBrands}}
 								<div class="col-sm-3 list-brand-unit">
 									<div class="list-brand-unit-inner">
 										<div class="row listing-image">
@@ -39,7 +121,7 @@
 										<h3 class="row brand-name">{{englishName}}</h3>
 									</div>
 								</div>
-        		  {{/each}}
+        		  {{/each}} -->
         		</div>
 			
           </div>

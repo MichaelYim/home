@@ -64,7 +64,7 @@ filter: alpha(opacity=50);
 	position:fixed;
 	left:0;
 	right:0;
-	bottom:20%;
+	bottom:10%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -96,15 +96,24 @@ filter: alpha(opacity=50);
 	width:100%;
 }
 
+.whiteEyeButton {
+	margin-top:25%;
+}
+
 .slide-image {
   height:100vh;
 }
 
-.slide1 .slide-image{
+/*.slide1 .slide-image{
 	background: url("/images/furniture-bg-1.jpg") no-repeat center fixed;
 	background-size:cover;
 }
 
+.slide2 .slide-image{
+	background: url("/images/furniture-bg-2.jpg") no-repeat center fixed;
+	background-size:cover;
+}
+*/
 @media screen and (max-width:960px) {
 	.carousel-inner .slide-image {
 		width:auto;
