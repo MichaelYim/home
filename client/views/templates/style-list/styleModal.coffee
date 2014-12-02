@@ -52,6 +52,10 @@ Template.styleModal.events
   "click .close": ->
     Session.set "style-modal", false
 
+  "click .site-logo": ->
+    Session.set "style-modal", false
+    console.log "running"
+
   "click .style-filter-button-unit":(e) ->
     Session.set "filter-style", e.target.textContent
     console.log Session.get("filter-style")

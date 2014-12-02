@@ -43,9 +43,9 @@
 								   		  </div>
 												{{/if}}
 												{{#if isSite}}
-												<div class="row listing-logo">
-		  	      		    		<a href=""><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
-			  	      		    	<img class="logo-overlay-icon" src="/images/site-icon.png"></a>
+												<div class="site-logo row listing-logo">
+		  	      		    		<a href="{{pathFor 'companySite' _id = this._id}}"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+		  	      		    	<img class="logo-overlay-icon" src="/images/site-icon.png"></a>
 												</div>
 												{{/if}}	
 												{{#if isInfo}}
@@ -87,8 +87,8 @@
 	         		  {{#each filteredBrandsSite}}
 									<div class="col-sm-3 list-brand-unit">
 										<div class="list-brand-unit-inner">
-		  								<div class="row listing-logo">
-	  	      		    		<a href=""><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+		  								<div class="site-logo row listing-logo">
+	  	      		    		<a href="{{pathFor 'companySite' _id = this._id}}"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
 		  	      		    	<img class="logo-overlay-icon" src="/images/site-icon.png"></a>
 											</div>
 											<h3 class="row brand-name">{{englishName}}</h3>
