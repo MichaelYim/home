@@ -19,7 +19,7 @@ if Brands.find().count() is 0
     englishName: "Balloon",
     letter: "B",
     chineseName: "",
-    style: "American Classics",
+    style: "Innocent",
     _id: "tMqutii94q8mF9TYx",
     linkType: "lookBook"
 
@@ -67,7 +67,7 @@ if Brands.find().count() is 0
     englishName: "Cleo",
     letter: "C",
     chineseName: "",
-    style: "Chinese Traditional",
+    style: "Innocent",
     linkType: "text",
     _id: "MYMwEvwtiA3r5czue"
 
@@ -78,4 +78,47 @@ if Brands.find().count() is 0
     style: "American Classics",
     linkType: "text",
     _id: "msm3aaYPTaNGQNWFf"
+
+  Brands.insert
+    englishName: "Genghis Kahn",
+    letter: "G",
+    chineseName: "",
+    style: "Chinese Traditional",
+    linkType: "lookBook",
+    _id: "oW7CJnXHxvTBgKy9t"
+
+
+  Brands.insert
+    englishName: "Gary Chow",
+    letter: "G",
+    chineseName: "",
+    style: "European Classics",
+    linkType: "lookBook",
+    _id: "E6uzeh8rcpBL4rPQC"
+
+  Brands.insert
+    englishName: "Sofa King",
+    letter: "S",
+    chineseName: "",
+    style: "European Classics",
+    linkType: "site",
+    _id: "4Q22yHfkxN3zfGBYt"
+
+  Brands.insert
+    englishName: "Brick Pieces",
+    letter: "B",
+    chineseName: "",
+    style: "Mediterranean",
+    linkType: "site",
+    _id: "sthaAAijDp9FFdPKH"
+
+  Brands.insert
+    englishName: "Francolicious",
+    letter: "F",
+    chineseName: "",
+    style: "European Traditional",
+    linkType: "lookBook",
+    _id: "NiRzZZzSxy4Ktq3x4"
+
+
 

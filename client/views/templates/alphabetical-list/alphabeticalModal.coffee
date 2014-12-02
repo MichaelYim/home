@@ -25,6 +25,11 @@ Template.alphabeticalModal.helpers
   filteredBrandsSite: ->
     Brands.find({letter: Session.get("filter-letter"), linkType: "site"},{sort: { letter: 1 }})
   # end of one set of filters
+
+  filteredBrandsInfo: ->
+    Brands.find({letter: Session.get("filter-letter"), linkType: "text"},{sort: { letter: 1 }})
+  # end of one set of filters
+  
   currentLetter: ->
   	Session.get "filter-letter"
 
