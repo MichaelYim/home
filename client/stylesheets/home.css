@@ -16,7 +16,7 @@
 }
 
 .carousel-caption-text:hover {
-	color:rgba(255,255,255,0.75);
+	color:rgba(255,255,255,0.4);
 	cursor: hand; cursor: pointer;
 
 }
@@ -97,7 +97,18 @@ filter: alpha(opacity=50);
 }
 
 .whiteEyeButton {
-	margin-top:25%;
+ 	cursor: hand; cursor: pointer;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 15%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.whiteEyeButton:hover {
+	opacity:0.4;
 }
 
 .slide-image {
