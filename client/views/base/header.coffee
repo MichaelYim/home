@@ -11,10 +11,11 @@ Template.header.events
 		Session.set "look-modal", false
 
 Template.header.events
-	"click .360-link": ->
+	"click .360-link,.header-logo": ->
 		Session.set "style-modal", false
 		Session.set "alphabetical-modal", false
 		Session.set "look-modal", false
+		Router.go("home")
 
 Template.header.events
 	"click .look-link": ->

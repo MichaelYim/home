@@ -120,5 +120,35 @@ if Brands.find().count() is 0
     linkType: "lookBook",
     _id: "NiRzZZzSxy4Ktq3x4"
 
+  Brands.insert
+    englishName: "Elegant Designs",
+    letter: "E",
+    chineseName: "",
+    style: "Mediterranean",
+    linkType: "lookBook",
+    _id: "r9kB7uQZ67kWRBBfu"
+
+  Brands.insert
+    englishName: "Elephante",
+    letter: "E",
+    chineseName: "",
+    style: "European Traditional",
+    linkType: "text",
+    _id: "33KaHdRSZBvCu4W7C"
+
+  Brands.insert
+    englishName: "Water Park",
+    letter: "W",
+    chineseName: "",
+    style: "Innocent",
+    linkType: "lookBook",
+    _id: "dYdyZcZbNXbCH5sE8"
 
 
+  Brands.insert
+    englishName: "One",
+    letter: "O",
+    chineseName: "",
+    style: "Decor",
+    linkType: "lookBook",
+    _id: "YqpD5vSPuW5BbXKpA"

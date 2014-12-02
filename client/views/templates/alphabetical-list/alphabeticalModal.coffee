@@ -50,8 +50,12 @@ Template.alphabeticalModal.events
   "click .close": ->
     Session.set "alphabetical-modal", false
 
+  "click .site-logo": ->
+    Session.set "alphabetical-modal", false
+
   "click .alph-filter-button-unit":(e) ->
     Session.set "filter-letter", e.target.textContent
     $('.alph-filter-button-unit').removeClass("filter-active")
     $(e.currentTarget).addClass("filter-active")
 
+  

@@ -31,6 +31,19 @@ Router.map () ->
   #     ]
 
 
+  @route "companySite",
+    path: "/companySite/:_id"
+    # waitOn: ->
+    #   [
+    #     Meteor.subscribe("users", @params._id)
+    #     Meteor.subscribe("todos", @params._id)
+    #     Meteor.subscribe("stuffs")
+    #   ]
+
+    data: ->
+      Brands.findOne @params._id
+
+
   # @route 'edit_form',
   #   path: 'edit_profile'
   #   waitOn: ->

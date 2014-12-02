@@ -44,6 +44,9 @@ Template.styleModal.helpers
   filteredBrandsSite: ->
     Brands.find({style: Session.get("filter-style"), linkType: "site"},{sort: { letter: 1 }})
 
+  filteredBrandsInfo: ->
+    Brands.find({style: Session.get("filter-style"), linkType: "text"},{sort: { letter: 1 }})
+
 # end of one set of filters
 Template.styleModal.events
   "click .close": ->
