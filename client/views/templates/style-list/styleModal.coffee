@@ -36,7 +36,6 @@ Template.styleModal.helpers
 
 # One set of filters
   filteredBrands360: ->
-    console.log "running helper"
     Brands.find({style: Session.get("filter-style"), linkType: "360"},{sort: { letter: 1 }})
 
   filteredBrandsLookBook: ->
