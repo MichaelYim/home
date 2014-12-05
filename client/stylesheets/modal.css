@@ -5,7 +5,7 @@
 	width:30%;
 	top:-84px;
 	right:-139px;
-  opacity: 0.7;
+  opacity: 0.3;
   filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
@@ -55,7 +55,8 @@ li.filter-active {
 }
 
 .modal-body {
-	overflow-y:scroll;
+	overflow-y:hidden;
+
 }
 
 /*Style Modal Style*/
@@ -145,8 +146,8 @@ li.filter-active {
 
 .info-modal {
 top: -80vh;
-height: 330px;
-width: 600px;
+min-height: 330px;
+width: 650px;
 background-color: rgba(225, 225, 221, 0.97);
 padding: 15px;
 border-radius: 10px;
@@ -168,4 +169,9 @@ margin-right: auto;
 	margin-left:auto;
 	margin-right:auto;
 	display:block;
+}
+
+.info-modal-contact-us:hover {
+	cursor: pointer; cursor: hand;
+	text-decoration:none;
 }

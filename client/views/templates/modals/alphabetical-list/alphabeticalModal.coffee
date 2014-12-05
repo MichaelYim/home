@@ -62,5 +62,6 @@ Template.alphabeticalModal.events
   "click .info-listing":(e) ->
     Session.set "info-context", this._id
     Session.set "info-modal", true
+    Session.set "info-modal-contact", false
 
   

@@ -8,3 +8,10 @@
 .admin-brand-list ul, .admin-brand-list li {
 	list-style-type: none;
 }
+
+
+/*admin list edit*/
+.admin-edit-form .form-group span{ 
+	margin-left:12px;
+
+}

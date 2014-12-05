@@ -54,19 +54,17 @@ Template.styleModal.events
 
   "click .site-logo": ->
     Session.set "style-modal", false
-    console.log "running"
 
   "click .style-filter-button-unit":(e) ->
     Session.set "filter-style", e.target.textContent
-    console.log Session.get("filter-style")
     $('.style-filter-button-unit').removeClass("filter-active")
     $(e.currentTarget).addClass("filter-active")
     Session.set "info-modal", false
 
   "click .info-listing":(e) ->
-    console.log "hihi"
     Session.set "info-context", this._id
     Session.set "info-modal", true
+    Session.set "info-modal-contact", false
 
 
 

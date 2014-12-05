@@ -57,6 +57,7 @@
   padding-top:5px;
 	padding-bottom:5px;
 	margin-top:28px;
+	height:215px;
 }
 
 .template1-contact-info-box ul{
@@ -67,5 +68,9 @@
 
 .template1-contact-info-box li .col-sm-4{
 	padding-left:0px;
+}
+
+.template1-contact-info-box div {
+	min-height:25px;
 }
 

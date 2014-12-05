@@ -1,14 +1,14 @@
 <template name="adminListEdit">
 	<div>
-		<form class="form-horizontal">
+		<form class="form-horizontal admin-edit-form">
 			<fieldset>
-			<h1 class="align-center">{{englishName}}</h1>
-
+			<h1 class="align-center">{{englishName}}<br>{{chineseName}}</h1>
+			
 			<!-- Text input-->
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="englishName">Brand Name</label>  
 			  <div class="col-md-4">
-			  <input id="englishName" name="englishName" type="text" placeholder="" class="form-control input-md">
+			  <input id="englishName" name="englishName" type="text" placeholder="" class="form-control input-md" value="{{englishName}}">
 			  <span class="help-block">English</span>  
 			  </div>
 			</div>
@@ -17,8 +17,57 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="chineseName">Brand Name</label>  
 			  <div class="col-md-4">
-			  <input id="chineseName" name="chineseName" type="text" placeholder="" class="form-control input-md">
+			  <input id="chineseName" name="chineseName" type="text" placeholder="" class="form-control input-md" value="{{chineseName}}">
 			  <span class="help-block">Chinese</span>  
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="englishCompanyName">Company Name</label>  
+			  <div class="col-md-4">
+			  <input id="englishCompanyName" name="englishCompanyName" type="text" placeholder="" class="form-control input-md" value="{{englishCompanyName}}">
+			  <span class="help-block">English</span>  
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="chineseCompanyName">Company Name</label>  
+			  <div class="col-md-4">
+			  <input id="chineseCompanyName" name="chineseCompanyName" type="text" placeholder="" class="form-control input-md" value="{{chineseCompanyName}}">
+			  <span class="help-block">Chinese</span>  
+			  </div>
+			</div>
+
+						<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+			  <div class="col-md-4">
+			  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md" value="{{phone}}">
+			  <span class="help-block">e.g. 86-153-2110780</span>  
+			  </div>
+			</div>
+
+						<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="fax">Fax</label>  
+			  <div class="col-md-4">
+			  <input id="fax" name="fax" type="text" placeholder="" class="form-control input-md" value="{{fax}}">
+			  </div>
+			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="email">Email</label>  
+			  <div class="col-md-4">
+			  <input id="email" name="email" type="text" placeholder="" class="form-control input-md" value="{{email}}">
+			  </div>
+			</div>
+
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="website">Website</label>  
+			  <div class="col-md-4">
+			  <input id="website" name="website" type="text" placeholder="" class="form-control input-md" value="{{website}}">
 			  </div>
 			</div>
 
@@ -26,10 +75,9 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="style">Style</label>
 			  <div class="col-md-4">
-			    <select id="style" name="style" class="form-control">
+			    <select id="style" name="style" class="form-control" value="{{style}}">
 			      <option value="American Classics">American Classics</option>
-			      <option value="Chinese">Chinese</option>
-			      <option value="Traditional">Traditional</option>
+			      <option value="Chinese Traditional">Chinese Traditional</option>
 			      <option value="Decor">Decor</option>
 			      <option value="European Classics">European Classics</option>
 			      <option value="Innocent">Innocent</option>
@@ -48,7 +96,7 @@
 			<div class="form-group">
 			  <label class="col-md-4 control-label" for="linkType">Link Type</label>
 			  <div class="col-md-4">
-			    <select id="linkType" name="linkType" class="form-control">
+			    <select id="linkType" name="linkType" class="form-control" value="linkType">
 			      <option value="360">360</option>
 			      <option value="lookBook">Lookbook</option>
 			      <option value="site">Brand Site</option>
