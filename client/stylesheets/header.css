@@ -1,5 +1,5 @@
 .container {
-    width:960px;
+  width:960px;
 }
 .header-link-container {
 	padding-left:35%;
@@ -9,6 +9,11 @@
 	color: #5B5B5B;
 	font-size:15px;
 	font-weight:600;
+	list-style-type: none;
+}
+
+.admin-header li {
+	list-style-type: none;
 }
 
 .header-links:hover {

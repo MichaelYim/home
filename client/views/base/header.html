@@ -21,6 +21,11 @@
             <li><a class="header-links animated fadeInRight alphabetical-list-link show-alphabetical-modal-button" href="">A-Z</a></li>
             <li><a class="header-links animated fadeInRight style-list-link show-style-modal-button" href="">STYLE</a></li>
           </ul>
+
+          <span class="admin-header pull-right">
+            <li>{{> loginButtons}}</li>
+            <li><a class="header-links animated fadeInRight" href="{{pathFor 'adminList'}}">admin panel</a></li>
+          </span>
           <!-- <ul class="nav navbar-nav navbar-right"> -->
 
             <!-- Edit profile button if user is logged in -->

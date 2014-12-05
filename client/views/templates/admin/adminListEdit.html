@@ -1,0 +1,81 @@
+<template name="adminListEdit">
+	<div>
+		<form class="form-horizontal">
+			<fieldset>
+			<h1 class="align-center">{{englishName}}</h1>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="englishName">Brand Name</label>  
+			  <div class="col-md-4">
+			  <input id="englishName" name="englishName" type="text" placeholder="" class="form-control input-md">
+			  <span class="help-block">English</span>  
+			  </div>
+			</div>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="chineseName">Brand Name</label>  
+			  <div class="col-md-4">
+			  <input id="chineseName" name="chineseName" type="text" placeholder="" class="form-control input-md">
+			  <span class="help-block">Chinese</span>  
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="style">Style</label>
+			  <div class="col-md-4">
+			    <select id="style" name="style" class="form-control">
+			      <option value="American Classics">American Classics</option>
+			      <option value="Chinese">Chinese</option>
+			      <option value="Traditional">Traditional</option>
+			      <option value="Decor">Decor</option>
+			      <option value="European Classics">European Classics</option>
+			      <option value="Innocent">Innocent</option>
+			      <option value="Korean">Korean</option>
+			      <option value="Mediterranean">Mediterranean</option>
+			      <option value="Modern American">Modern American</option>
+			      <option value="Modern Chinese">Modern Chinese</option>
+			      <option value="Modern European">Modern European</option>
+			      <option value="Office">Office</option>
+			      <option value="Outdoor">Outdoor</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- Select Basic -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="linkType">Link Type</label>
+			  <div class="col-md-4">
+			    <select id="linkType" name="linkType" class="form-control">
+			      <option value="360">360</option>
+			      <option value="lookBook">Lookbook</option>
+			      <option value="site">Brand Site</option>
+			      <option value="text">Info</option>
+			    </select>
+			  </div>
+			</div>
+
+			<!-- File Button --> 
+<!-- 			<div class="form-group">
+			  <label class="col-md-4 control-label" for="filebutton">File Button</label>
+			  <div class="col-md-4">
+			    <input id="filebutton" name="filebutton" class="input-file" type="file">
+			  </div>
+			</div> -->
+
+			<!-- Button -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="singlebutton">Single Button</label>
+			  <div class="col-md-4">
+			    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Button</button>
+			  </div>
+			</div>
+
+			</fieldset>
+		</form>
+
+	</div>
+</template>
+

@@ -1,6 +1,6 @@
 <template name="alphabeticalModal">
   {{#if showModal}}
-	      <div class="modal-backdrop fade in"></div>
+	   <div class="modal-backdrop fade in"></div>
       <div class="modal show">
           <div class="modal-dialog container">
           	<!-- Modal starts here-->
@@ -46,14 +46,14 @@
 										<div class="list-brand-unit-inner">
 	  	      		  		{{#if is360}}
 	  	      		  		<div class="row listing-logo">
-	  	      		    		<a href="http://ihomec.com/2fp1commune/flash/TourViewer_commune.html"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+	  	      		    		<a href="http://ihomec.com/2fp1commune/flash/TourViewer_commune.html"><img src="/images/logos/{{protoPicture}}">
 												<img class="logo-overlay-icon" src="/images/360eye-icon.png"></a>
 											</div>
 											<h3 class="row brand-name">{{englishName}}</h3>
 	  	      		  		{{/if}}
 	  	      		  		{{#if isLookBook}}
 	  	      		  		<div class="row listing-logo">
-	  	      		    		<a href="http://ihomec.com/lookbook/johnrichard/"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+	  	      		    		<a href="http://ihomec.com/lookbook/johnrichard/"><img src="/images/logos/{{protoPicture}}">
 							   		    <img class="logo-overlay-icon" src="/images/lookbook-icon.png"></a>
 							   		  </div>
 							   		  <h3 class="row brand-name">{{englishName}}</h3>
@@ -61,15 +61,15 @@
 											<!-- site logos redirect to company site -->
 											{{#if isSite}}
 											<div class="site-logo row listing-logo">
-	  	      		    		<a href="{{pathFor 'companySite' _id = this._id}}"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+	  	      		    		<a href="{{pathFor 'companySite' _id = this._id}}"><img src="/images/logos/{{protoPicture}}">
 		  	      		    	<img class="logo-overlay-icon" src="/images/site-icon.png"></a>
 											</div>
 											<h3 class="row brand-name">{{englishName}}</h3>
 											{{/if}}	
 
  											{{#if isInfo}}
-											<div class="row listing-logo">
-	  	      		    		<a href=""><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+											<div class="info-listing row listing-logo">
+	  	      		    		<a href=""><img src="/images/logos/{{protoPicture}}">
 		  	      		    	<img class="logo-overlay-icon" src="/images/info-icon.png"></a>
 		 									</div>
 		 									<h3 class="row brand-name">{{englishName}}</h3>
@@ -86,7 +86,7 @@
 										<div class="col-sm-3 list-brand-unit">
 											<div class="list-brand-unit-inner">
 		  	      		  		<div class="row listing-logo">
-		  	      		    		<a href="http://ihomec.com/2fp1commune/flash/TourViewer_commune.html"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+		  	      		    		<a href="http://ihomec.com/2fp1commune/flash/TourViewer_commune.html"><img src="/images/logos/{{protoPicture}}">
 													<img class="logo-overlay-icon" src="/images/360eye-icon.png"></a>
 												</div>
 												<h3 class="row brand-name">{{englishName}}</h3>
@@ -97,7 +97,7 @@
 										<div class="col-sm-3 list-brand-unit">
 											<div class="list-brand-unit-inner">
 				      		  		<div class="row listing-logo">
-		  	      		    		<a href="http://ihomec.com/lookbook/johnrichard/"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+		  	      		    		<a href="http://ihomec.com/lookbook/johnrichard/"><img src="/images/logos/{{protoPicture}}">
 								   		    <img class="logo-overlay-icon" src="/images/lookbook-icon.png"></a>
 								   		  </div>
 												<h3 class="row brand-name">{{englishName}}</h3>
@@ -108,7 +108,7 @@
 										<div class="col-sm-3 list-brand-unit">
 											<div class="list-brand-unit-inner">
 				  							<div class="site-logo row listing-logo">
-	  	      		    		<a href="{{pathFor 'companySite' _id = this._id}}"><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+	  	      		    		<a href="{{pathFor 'companySite' _id = this._id}}"><img src="/images/logos/{{protoPicture}}">
 		  	      		    	<img class="logo-overlay-icon" src="/images/site-icon.png"></a>
 											</div>
 											<h3 class="row brand-name">{{englishName}}</h3>
@@ -118,8 +118,8 @@
 		        		  {{#each filteredBrandsInfo}}
 										<div class="col-sm-3 list-brand-unit">
 											<div class="list-brand-unit-inner">
-				  							<div class="row listing-logo">
-		  	      		    		<a href=""><img src="http://placehold.it/200x100/ffffff/000000&text=LOGO">
+				  							<div class="info-listing row listing-logo">
+		  	      		    		<a href=""><img src="/images/logos/{{protoPicture}}">
 			  	      		    	<img class="logo-overlay-icon" src="/images/info-icon.png"></a>
 			 									</div>
 			 									<h3 class="row brand-name">{{englishName}}</h3>

@@ -1,0 +1,10 @@
+.admin-brand-list-box {
+	width:600px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.admin-brand-list ul, .admin-brand-list li {
+	list-style-type: none;
+}

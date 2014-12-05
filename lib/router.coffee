@@ -32,7 +32,7 @@ Router.map () ->
 
 
   @route "companySite",
-    path: "/companySite/:_id"
+    path: "/company-site/:_id"
     # waitOn: ->
     #   [
     #     Meteor.subscribe("users", @params._id)
@@ -55,8 +55,8 @@ Router.map () ->
   #     Meteor.user()
 
 
-  # @route 'info',
-  #   path: 'info'
+  @route "adminList",
+    path: "/admin-list"
   #   waitOn: ->
   #     [
   #       Meteor.subscribe('users')
@@ -66,8 +66,8 @@ Router.map () ->
   #       Meteor.subscribe('chatrooms')
   #     ]
 
-  # @route 'shoutOuts',
-  #   path: 'shoutOuts'
+  @route "adminListEdit",
+    path: "/admin-list/:_id"
   #   waitOn: ->
   #     [
   #       Meteor.subscribe('users')
@@ -77,6 +77,8 @@ Router.map () ->
   #       Meteor.subscribe('chatrooms')
   #       Meteor.subscribe('shoutouts')
   #     ]
+    data: ->
+      Brands.findOne @params._id
 
   # @route 'track',
   #   path: 'shoutOuts'

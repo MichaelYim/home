@@ -1,0 +1,15 @@
+<template name="adminList">
+	<div class="admin-brand-list-box">
+    <h1>Company List</h1>
+    {{#each BrandsAll}}
+			<div class="admin-brand-list">
+				<a href="{{pathFor 'adminListEdit' _id = this._id}}">
+					<ul>
+						<li>{{englishName}}</li>
+						<li>{{chineseName}}</li>
+					</ul>
+				</a>
+			</div>
+    {{/each}}
+  </div>
+</template>

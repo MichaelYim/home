@@ -57,5 +57,10 @@ Template.alphabeticalModal.events
     Session.set "filter-letter", e.target.textContent
     $('.alph-filter-button-unit').removeClass("filter-active")
     $(e.currentTarget).addClass("filter-active")
+    Session.set "info-modal", false
+
+  "click .info-listing":(e) ->
+    Session.set "info-context", this._id
+    Session.set "info-modal", true
 
   

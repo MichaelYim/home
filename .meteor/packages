@@ -10,9 +10,11 @@ iron:router
 coffeescript
 accounts-password
 mrt:crater-modals
-accounts-ui
 natestrauser:font-awesome
 mizzao:bootboxjs
 mizzao:bootstrap-3
 alanning:roles
-
+cfs:standard-packages
+cfs:filesystem
+cfs:gridfs
+accounts-ui

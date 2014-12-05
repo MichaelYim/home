@@ -30,3 +30,5 @@ Template.header.events
 		Session.set "filter-letter", "All"
 		Session.set "filter-style", "All"
 		Session.set "filter-look", "All"
+		Session.set "info-context", ""
+		Session.set "info-modal", false

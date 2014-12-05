@@ -13,6 +13,7 @@
     margin-left:auto;
     margin-right:auto;
     top:28%;*/
+  text-shadow: 0 0 0.2em rgb(89, 88, 86), 0 0 0.2em rgb(89, 88, 86)
 }
 
 .carousel-caption-text:hover {
@@ -64,7 +65,7 @@ filter: alpha(opacity=50);
 	position:fixed;
 	left:0;
 	right:0;
-	bottom:10%;
+	bottom:13%;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -91,9 +92,9 @@ filter: alpha(opacity=50);
 	margin-left:10px;
 }
 
-.carousel-inner > .item >img {
-	height:100%;
-	width:100%;
+.carousel-inner > .item {
+	height:100vh;
+	 
 }
 
 .whiteEyeButton {
@@ -104,6 +105,7 @@ filter: alpha(opacity=50);
 	bottom: 20%;
 	margin-left: auto;
 	margin-right: auto;
+	width: 150px;
 
 }
 
@@ -112,7 +114,10 @@ filter: alpha(opacity=50);
 }
 
 .slide-image {
-  height:100vh;
+  width:auto;
+	height:100%;
+	background-repeat: no-repeat;
+  background-position: center; 
 }
 
 /*.slide1 .slide-image{
@@ -125,7 +130,7 @@ filter: alpha(opacity=50);
 	background-size:cover;
 }
 */
-@media screen and (max-width:960px) {
+/*@media screen and (max-width:960px) {
 	.carousel-inner .slide-image {
 		width:auto;
 		background-position: center center;
@@ -133,4 +138,4 @@ filter: alpha(opacity=50);
 		
 	}
 }
-
+*/
