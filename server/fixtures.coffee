@@ -269,7 +269,7 @@ if Brands.find().count() is 0
   Brands.insert
     englishCompanyName:"GUANGZHOU CITY JUHAO FURNITURE CO.,LTD",
     chineseCompanyName:"广州市聚豪家具有限公司",
-    englishName: "JUHAO INTELLIGENT BEDDING",
+    englishName: "JUHAO",
     letter: "J",
     chineseName: "聚豪",
     style: "American Classics",

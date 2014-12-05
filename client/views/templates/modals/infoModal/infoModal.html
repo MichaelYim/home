@@ -6,14 +6,16 @@
           	<!-- Modal starts here-->
             <div class="info-modal modal-body animated fadeInLeft">
             	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            	<h1 class="align-center">{{context.englishName}}</h1>			
+            	<div class="info-popup-banner"><img src="/images/logos/{{context.protoPicture}}"></div>	
+            	<h1 class="align-center">{{context.englishName}}</h1>		
             	<ul class="info-modal-list">
-								<li><span class="col-sm-4">Name:</span><span>{{this.englishName}}</span></li> 
-								<li><span class="col-sm-4"></span><span>鸿涂画业</span></li> 
-								<li><span class="col-sm-4">Company:</span><span>深圳市鸿涂画业有限公司</span></li>
-								<li><span class="col-sm-4">Email:</span><span>814945586@qq.com</span></li>
-								<li><span class="col-sm-4">Phone:</span><span>86-769-81638009</span></li>
-								<li><span class="col-sm-4">Address:</span><span>answer</span></li>
+
+								<li><span class="col-sm-3">Company:</span><span>{{context.englishCompanyName}}</span></li> 
+								<li><span class="col-sm-3">Main Products:</span><span>{{context.englishMainProduct}}</span></li>
+								<li><span class="col-sm-3">Email:</span><span>{{context.email}}</span></li>
+								<li><span class="col-sm-3">Phone:</span><span>{{context.phone}}</span></li>
+								<li><span class="col-sm-3">Fax:</span><span>{{context.fax}}</span></li>
+								<li><span class="col-sm-3">Booth No:</span><span>{{context.boothNo}}</span></li>
 
             	</ul>
           </div>
