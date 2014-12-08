@@ -22,13 +22,94 @@
             {{#if contactOpen}}
               <div>
               
-                <h1> LALALAL</h1> 
+                <form class="form-horizontal">
+                  <fieldset>
+
+                  <!-- Form Name -->
+                  <legend>Contact {{context.englishName}}</legend>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="lastName">*Last Name</label>  
+                    <div class="col-md-4">
+                    <input id="lastName" name="lastName" type="text" placeholder="" class="form-control input-md" required="">
+                      
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="firstName">*First Name</label>  
+                    <div class="col-md-4">
+                    <input id="firstName" name="firstName" type="text" placeholder="" class="form-control input-md" required="">
+                      
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="companyName">*Company Name</label>  
+                    <div class="col-md-4">
+                    <input id="companyName" name="companyName" type="text" placeholder="" class="form-control input-md" required="">
+                      
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="companyWebsite">Company Website</label>  
+                    <div class="col-md-4">
+                    <input id="companyWebsite" name="companyWebsite" type="text" placeholder="" class="form-control input-md">
+                      
+                    </div>
+                  </div>
+
+                  <!-- Textarea -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="enquiry">*Enquiry</label>
+                    <div class="col-md-4">                     
+                      <textarea class="form-control" id="enquiry" name="enquiry"></textarea>
+                    </div>
+                  </div>
+
+                  <!-- Select Basic -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+                    <div class="col-md-4">
+                      <select id="selectbasic" name="selectbasic" class="form-control">
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="Phone">*Phone Number</label>  
+                    <div class="col-md-4">
+                    <input id="Phone" name="Phone" type="text" placeholder="" class="form-control input-md" required="">
+                      
+                    </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">*Email</label>  
+                    <div class="col-md-4">
+                    <input id="email" name="email" type="text" placeholder="" class="form-control input-md" required="">
+                      
+                    </div>
+                  </div>
+
+                  </fieldset>
+                  </form>
+
               
               </div>
             {{/if}}
 <!-- 
 <select class="styled" id="country-profiles-dropdown" name="country">
-<option value="--">Select a Country or Other Area</option>
+<option value="">Select a Country or Other Area</option>
 <option value="">Afghanistan</option>
 <option value="htm">Albania</option>
 <option value="htm">Algeria</option>
